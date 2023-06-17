@@ -1,0 +1,102 @@
+.container {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.intro {
+    width: 90%;
+    height: auto;
+    padding: 20px;
+    box-sizing: border-box;
+    background-color: #395B64;
+    color: white;
+    margin: 10px 0px;
+    margin-top: 20px;
+}
+
+.text-intro {
+    text-align: center;
+    font-size: 25px;
+    font-weight: bold;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.form-search {
+    width: 90%;
+    height: auto;
+    box-sizing: border-box;
+    background-color: #395B64;
+    color: white;
+    margin: 10px 0px;
+}
+.form-search input {
+    background: none;
+    border: none;
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+    color: white;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.form-search input::placeholder {
+    color: white;
+}
+
+.container-surat {
+    width: 90%;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin: 10px 0px;
+}
+
+.card-surat {
+    width: 20rem;
+    height: auto;
+    padding: 15px;
+    box-sizing: border-box;
+    background-color: #395B64;
+    text-align: start;
+    color: white;
+    cursor: pointer;
+    border: none;
+}
+
+.card-surat:hover {
+    opacity: 80%;
+}
+
+.judul-latin {
+    text-align: start;
+    margin-bottom: 5px;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.judul-arab {
+    text-align: end;
+    margin-bottom: 5px;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: monospace;
+}
+
+.deskripsi {
+    text-align: end;
+    font-size: 16px;
+    font-weight: 400;
+    font-style: italic;
+}
+
+@media screen and (max-width: 767px) {
+    .card-surat {
+        width: 100%;
+    }
+}

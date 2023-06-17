@@ -1,0 +1,72 @@
+.tafsir {
+    width: 90%;
+    height: auto;
+    margin-top: 20px;
+}
+
+.head-tafsir {
+    width: 100%;
+    height: auto;
+    padding: 15px;
+    box-sizing: border-box;
+    background-color: #395B64;
+    margin-bottom: 10px;
+}
+
+.head-tafsir h2 {
+    text-align: center;
+}
+
+.head-tafsir P {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.head-tafsir button {
+    cursor: pointer;
+    padding: 5px;
+    border: none;
+    margin-top: 10px;
+}
+
+.body-tafsir {
+    width: 100%;
+    height: auto;
+    display: flex;
+    margin-top: 15px;
+    flex-direction: column;
+}
+
+.body-tafsir .card {
+    width: 100%;
+    height: auto;
+    padding: 15px;
+    box-sizing: border-box;
+    background-color: #395B64;
+    margin-bottom: 10px;
+}
+
+.body-tafsir .card h5 {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.select-ayat {
+    width: 100%;
+    height: auto;
+    padding: 15px;
+    margin: 10px 0px;
+    background-color: #395B64;
+    color: white;
+    box-sizing: border-box;
+}
+
+.select-ayat select {
+    width: 100%;
+    height: auto;
+    padding: 15px;
+    background-color: #2C3333;
+    border: none;
+    color: white;
+    box-sizing: border-box;
+}

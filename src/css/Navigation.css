@@ -1,0 +1,102 @@
+.navbar {
+    width: 100%;
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    box-sizing: border-box;
+    background-color: #395B64;
+    color: white;
+    box-shadow: 0px 0px 10px 0px #2C3333;
+    position: fixed;
+    top: 0;
+}
+
+.backdrop {
+    width: 100%;
+    height: 60px;
+}
+
+.brand {
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.menu {
+    display: flex;
+    gap: 10px;
+}
+.menu button {
+    cursor: pointer;
+    padding: 10px;
+    font-weight: 600;
+    background-color: #2C3333;
+    color: white;
+}
+
+.menu button:hover {
+    background-color: #E7F6F2;
+    color: #395B64;
+}
+
+.humberger {
+    display: none;
+}
+
+.btn-close {
+    display: none;
+}
+
+@media screen and (max-width:767px) {
+
+    .humberger {
+        display: flex;
+        width: 50px;
+        height: 100%;
+        background: none;
+        border: none;
+        flex-direction: column;
+        justify-content: space-between;
+        cursor: pointer;
+    }
+
+    .humberger div {
+        width: 100%;
+        height: 5px;
+        background-color: white;
+    }
+
+    .menu {
+        position: fixed;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background-color: #395B64;
+        z-index: 9999;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+
+    .menu button {
+        width: 50%;
+        margin: 15px 0px;
+    }
+
+    .menu .btn-close {
+        display: inline-block;
+        width: 50px;
+        background-color: #E7F6F2;
+        color: #2C3333;
+    }
+
+    .d-none {
+        display: none;
+    }
+
+}
