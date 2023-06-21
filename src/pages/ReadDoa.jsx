@@ -2,18 +2,18 @@ import React, { useEffect, useState } from 'react'
 import Navigation from '../components/Navigation'
 import Footer from '../components/Footer'
 import "../css/Doa.css"
-import { useParams } from 'react-router-dom'
 import axios from 'axios'
 const ReadDoa = () => {
-    const id = useParams()
     const [doa, setDoa] = useState([])
 
     useEffect(() => {
-        getDetailDoa()
+        const url = window.location.href;
+        const id = url.split('/doa/')[1];
+        getDetailDoa(id)
     }, [])
 
-    const getDetailDoa = async () => {
-        const response = await axios.get(`https://equran.id/_next/data/kxkUjfH9JP-fYvtf4Vn41/doa/1.json?doa=${id}`);
+    const getDetailDoa = async (id) => {
+        const response = await axios.get(`https://equran.id/_next/data/kxkUjfH9JP-fYvtf4Vn41/doa/${id}.json?doa=${id}`);
         setDoa(response.data.pageProps.data1)
     }
     return (
