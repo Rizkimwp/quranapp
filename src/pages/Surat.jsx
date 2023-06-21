@@ -22,6 +22,7 @@ const Surat = () => {
         }
         getOneSurat(id).then((result) => {
             setDetailSurat(result)
+            document.title = `QuranApp  | Surat - ${result.namaLatin}`
             setAyat(result.ayat)
             setAudio(result.audioFull['05'])
             loadBox.current.classList.add("hide")
