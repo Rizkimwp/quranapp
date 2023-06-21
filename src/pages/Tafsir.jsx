@@ -18,6 +18,7 @@ const Tafsir = () => {
         getTafsir(id).then((result) => {
             setDetailSurat(result)
             setTafsir(result.tafsir)
+            document.title = `QuranApp | Tafsir - ${result.namaLatin}`
         })
     }, [])
 
