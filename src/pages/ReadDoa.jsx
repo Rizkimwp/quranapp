@@ -14,7 +14,9 @@ const ReadDoa = () => {
 
     const getDetailDoa = async (id) => {
         const response = await axios.get(`https://equran.id/_next/data/kxkUjfH9JP-fYvtf4Vn41/doa/${id}.json?doa=${id}`);
-        setDoa(response.data.pageProps.data1)
+        const result = response.data.pageProps.data1;
+        setDoa(result)
+        document.title = `QuranApp | ${result.nama}`;
     }
     return (
         <div>
